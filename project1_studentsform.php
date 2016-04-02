@@ -12,7 +12,7 @@
             
             if($_SERVER["REQUEST_METHOD"]=="POST") {
                 if(empty($_POST["name"])) {
-                    $nameErr="Name is Require";
+                    $nameErr="Name is Required";
                 }
                 else {
                     $name=test_input($_POST["name"]);
