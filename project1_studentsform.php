@@ -26,7 +26,7 @@
                 else {
                     $email=test_input($_POST["email"]);
                     if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-                        $emailErr="INvalid Email format";
+                        $emailErr="Invalid Email format";
                     }
                 }
                 if(empty($_POST["ano"])) {
