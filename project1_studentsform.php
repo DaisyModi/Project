@@ -10,7 +10,7 @@
             $nameErr=$emailErr=$anoErr=$genderErr="";
             $name=$email=$ano=$gender="";
             
-            if($_SERVER["REQUEST METHOD"]=="POST") {
+            if($_SERVER["REQUEST_METHOD"]=="POST") {
                 if(empty($_POST["name"])) {
                     $nameErr="Name is Require";
                 }
