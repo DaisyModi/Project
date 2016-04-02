@@ -48,7 +48,7 @@
                 return $data;
             }
             ?>
-            <h2>sign up for stdents</h2>
+            <h2>Sign up for students</h2>
             <p><span class = "error" >* required fields</span></p>
             <form method = "post" action = "<?php  echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 NAME: <input type="text" name="name" value = "<?php echo $name; ?>">
@@ -57,10 +57,10 @@
                 EMAIL: <input type="text" name="email" value = "<?php echo $email; ?>">
                 <span class= "error">* <?php $emailErr; ?></span>
                 <br><br>
-                Admission No.: <input type="text" name ="ano" value = "<?php echo $ano; ?>">
+                ADMISSION NO.: <input type="text" name ="ano" value = "<?php echo $ano; ?>">
                 <span class = "error" >* <?php echo $anoErr; ?></span>
                 <br><br>
-                Gender: 
+                GENDER: 
                 <input type="radio" name = "gender" <?php if (isset($gender) && $gender == "female") echo "checked"; ?> value = "female">Female
                 <input type="radio" name= "gender" <?php if(isset($gender) && $gender == "male") echo "checked"; ?> value = "male">Male
                 <span class="error" >* <?php echo $genderErr; ?></span>
