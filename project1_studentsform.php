@@ -48,7 +48,7 @@
                 return $data;
             }
             ?>
-            <h2>sign up for stdents</h2>
+            <h2 align="center">sign up for stdents</h2>
             <p><span class = "error" >* required fields</span></p>
             <form method = "post" action = "<?php  echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                 NAME: <input type="text" name="name" value = "<?php echo $name; ?>">
