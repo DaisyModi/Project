@@ -30,7 +30,14 @@
                     }
                 }
                 if(empty($_POST["ano"])) {
-                    $anoErr="Admission NO is Required";
+                    $anoErr="Admission No is Required";
+                }
+                else
+                {
+                    $ano=test_input($_POST["ano"]);
+                    if(!preg_match("/^[a-zA-Z0-9]*$/",$ano)){
+                        $anoErr="Invalid admission no.";
+                    }
                 }
                 if(empty($_POST["gender"])) {
                     $genderErr="Gender is Required";
@@ -43,7 +50,7 @@
             
             function test_input($data) {
                 $data=trim($data);
-                $data=stripslasshes($data);
+                $data=stripslashes($data);
                 $data=htmlspecialchars($data);
                 return $data;
             }
